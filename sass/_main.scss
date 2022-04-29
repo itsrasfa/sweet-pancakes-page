@@ -1,0 +1,51 @@
+.conteudo-principal {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  padding: 60px 0 35px 0;
+
+
+
+  h1 {
+    color: $cor-primaria;
+    font-family: 'Bree Serif';
+    font-size: rem(50);
+    margin-bottom: rem(20);
+    margin-top: rem(40);
+
+    @include medium {
+      padding: 0px 20px;
+    }
+
+    @include mobile {
+      font-size: rem(32);
+      margin-top: rem(0);
+    }
+  }
+
+  p {
+    font-family: 'Nunito';
+    font-size: rem(22);
+    max-width: 38ch;
+
+    @include medium {
+      padding: 0px 20px;
+    }
+
+    @include mobile {
+      font-size: rem(16);
+      padding: 0px 20px;
+    }
+  }
+
+  img {
+    cursor: auto;
+
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+
+}

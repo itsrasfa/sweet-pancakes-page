@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito:wght@300;400;500;600;700&display=swap');
+
+$cor-primaria: #CA6215;
+$cor-texto: #41352D;
+$links: #7E5E49;
+$separador: #F3EEE3;
+
+
+@function rem($pixels, $contexto: 16) {
+  @return ($pixels / $contexto) * 1rem;
+}
+
+@mixin mobile {
+  @media (max-width:500px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (max-width:1200px) {
+    @content;
+  }
+}
+
+@import 'sass/reset.scss';
+@import 'sass/nav.scss';
+@import 'sass/modal.scss';
+@import 'sass/main.scss';
+@import 'sass/footer';

@@ -1,0 +1,29 @@
+footer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: 3px solid $separador;
+
+  @include mobile {
+    max-width: 300px;
+  }
+
+  p {
+    text-align: center;
+    color: $cor-texto;
+    font-family: 'Nunito';
+    margin-top: rem(30);
+
+    @include mobile {
+      margin-bottom: rem(30);
+    }
+  }
+
+  a {
+    color: $links;
+
+    &:hover {
+      color: $cor-primaria;
+    }
+  }
+}
